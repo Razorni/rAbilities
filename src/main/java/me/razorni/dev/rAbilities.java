@@ -57,7 +57,7 @@ public class rAbilities extends JavaPlugin {
         registerCommands();
         Bukkit.getServer().getConsoleSender().sendMessage(chatUtil.chat("&7&m--------------------"));
         Bukkit.getServer().getConsoleSender().sendMessage(chatUtil.chat("&6rAbilities &fhas been &aenabled."));
-        Bukkit.getServer().getConsoleSender().sendMessage(chatUtil.chat("&fMade by &eRazorni#7254"));
+        Bukkit.getServer().getConsoleSender().sendMessage(chatUtil.chat("&fForked by &eRazorni#7254"));
         Bukkit.getServer().getConsoleSender().sendMessage(chatUtil.chat("&7&m--------------------"));
 
     }
