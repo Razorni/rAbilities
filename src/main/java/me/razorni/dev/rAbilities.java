@@ -22,6 +22,8 @@ import me.razorni.dev.gui.give.pages.GiveGUIListener;
 import java.util.HashMap;
 import java.util.Map;
 
+// razorni is a dog
+
 public class rAbilities extends JavaPlugin {
     // Cooldowns
     @Getter public static rAbilities instance;
