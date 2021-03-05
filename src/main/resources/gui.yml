@@ -1,0 +1,771 @@
+#################
+#    Give-GUI   #
+#################
+
+Give-GUI:
+  Items:
+    Page-1-Size: 54
+    Page-2-Size: 36
+
+    Page-Items:
+      Page-1:
+        Next-Page: # Note: you cannot delete these or add on to them.
+          Enabled: true
+          Name: "&cNext Page &7&m--->"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 54
+        Previous-Page:
+          Enabled: true
+          Name: "&7&m<---&c Previous Page"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 46
+      Page-2:
+        Next-Page: # Note: you cannot delete these or add on to them.
+          Enabled: true
+          Name: "&cNext Page &7&m--->"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 36
+        Previous-Page:
+          Enabled: true
+          Name: "&7&m<---&c Previous Page"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 28
+    Page-1:
+      Ability-Reset: # You can change these delete/create your own!
+        Name: "&4Ability-Reset"
+        Item: "WATCH"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &4Ability-Reset(s)&7.'
+        Command: "ability %player% abilityreset %amount%"
+        Slot: 11
+      ImpulseBomb:
+        Name: "&b&lImpulse Bomb"
+        Item: "SNOW_BALL"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &bImpulseBomb(s)&7.'
+        Command: "ability %player% impulsebomb %amount%"
+        Slot: 12
+      AntiPot:
+        Name: "&3AntiPot"
+        Item: "LEVER"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &3AntiPot(s)&7.'
+        Command: "ability %player% antipot %amount%"
+        Slot: 13
+      AntiFall:
+        Name: "&cAntiFall"
+        Item: "DIAMOND_BOOTS"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &cAntiFall(s)&7.'
+        Command: "ability %player% antifall %amount%"
+        Slot: 14
+      AntiRedstone:
+        Name: "&cAntiRedstone"
+        Item: "BLAZE_ROD"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &cAntiRedstone(s)&7.'
+        Command: "ability %player% antiredstone %amount%"
+        Slot: 15
+      Cleave:
+        Name: "&4Cleave"
+        Item: "DIAMOND_AXE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &4Cleave(s)&7.'
+        Command: "ability %player% cleave %amount%"
+        Slot: 16
+      EnderButt:
+        Name: "&5EnderButt"
+        Item: "ENDER_PEARL"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &5EnderButt(s)&7.'
+        Command: "ability %player% enderbutt %amount%"
+        Slot: 17
+      Bone:
+        Name: "&6Exotic Bone"
+        Item: "BONE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6Exotic Bone(s)&7.'
+        Command: "ability %player% exoticbone %amount%"
+        Slot: 20
+      FakePearl:
+        Name: "&6Fake Pearl"
+        Item: "ENDER_PEARL"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6Fake Pearl(s)&7.'
+        Command: "ability %player% fakepearl %amount%"
+        Slot: 21
+      Freezer:
+        Name: "&3Freezer"
+        Item: "GOLD_HOE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &3Freezer(s)&7.'
+        Command: "ability %player% freezer %amount%"
+        Slot: 22
+      Grappler:
+        Name: "&6Grappler"
+        Item: "FISHING_ROD"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6Grappler(s)&7.'
+        Command: "ability %player% grappler %amount%"
+        Slot: 23
+      GuardianAngel:
+        Name: "&dGuardian Angel"
+        Item: "GHAST_TEAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &dGuardian Angel(s)&7.'
+        Command: "ability %player% guardianangel %amount%"
+        Slot: 24
+      Harpoon:
+        Name: "&bHarpoon"
+        Item: "WOOD_AXE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &bHarpoon(s)&7.'
+        Command: "ability %player% harpoon %amount%"
+        Slot: 25
+      LuckyIngot:
+        Name: "&eLucky Ingot"
+        Item: "GOLD_INGOT"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &eLucky Ingot(s)&7.'
+        Command: "ability %player% luckyingot %amount%"
+        Slot: 26
+      Mixer:
+        Name: "&cMixer"
+        Item: "EGG"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &cMixer(s)&7.'
+        Command: "ability %player% mixer %amount%"
+        Slot: 29
+      PocketBard:
+        Name: "&6PocketBard"
+        Item: "INK_SACK"
+        Data: 14
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6PocketBard(s)&7.'
+        Command: "ability %player% pocketbard %amount%"
+        Slot: 30
+      PoisonDart:
+        Name: "&5PoisonDart"
+        Item: "STICK"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &5PoisonDart(s)&7.'
+        Command: "ability %player% poisondart %amount%"
+        Slot: 31
+      BackStab:
+        Name: "&eBackStab"
+        Item: "BONE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &eBackStab(s)&7.'
+        Command: "ability %player% backstab %amount%"
+        Slot: 32
+      PotionCounter:
+        Name: "&dPotionCounter"
+        Item: "STICK"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &dPotionCounter(s)&7.'
+        Command: "ability %player% potioncounter %amount%"
+        Slot: 33
+      PotionInheritor:
+        Name: "&ePotionInheritor"
+        Item: "BLAZE_ROD"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &ePotionInheritor(s)&7.'
+        Command: "ability %player% potioninheritor %amount%"
+        Slot: 34
+      PrePearl:
+        Name: "&dPrePearl"
+        Item: "ENDER_PEARL"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &dPrePearl(s)&7.'
+        Command: "ability %player% prepearl %amount%"
+        Slot: 35
+      RageAbility:
+        Name: "&3RageAbility"
+        Item: "NETHER_STAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &3RageAbility(s)&7.'
+        Command: "ability %player% rageability %amount%"
+        Slot: 38
+      Rocket:
+        Name: "&cRocket"
+        Item: "FIREWORK"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &cRocket(s)&7.'
+        Command: "ability %player% rocket %amount%"
+        Slot: 39
+      RottenEgg:
+        Name: "&2RottenEgg"
+        Item: "EGG"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &2RottenEgg(s)&7.'
+        Command: "ability %player% rottenegg %amount%"
+        Slot: 40
+      SwapperAxe:
+        Name: "&6Swapper Axe"
+        Item: "GOLD_AXE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6Swapper Axe(s)&7.'
+        Command: "ability %player% swapperaxe %amount%"
+        Slot: 41
+      Switcher:
+        Name: "&aSwitcher"
+        Item: "SNOW_BALL"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &aSwitcher(s)&7.'
+        Command: "ability %player% switcher %amount%"
+        Slot: 42
+      SwitchStick:
+        Name: "&2SwitchStick"
+        Item: "STICK"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &2SwitchStick(s)&7.'
+        Command: "ability %player% switchstick %amount%"
+        Slot: 43
+      TankIngot:
+        Name: "&bTank Ingot"
+        Item: "IRON_INGOT"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &bTank Ingot(s)&7.'
+        Command: "ability %player% tankingot %amount%"
+        Slot: 44
+    Page-2:
+      WebGun:
+        Name: "&2&lWebGun"
+        Item: "DIAMOND_HOE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &2WebGun(s)&7.'
+        Command: "ability %player% webgun %amount%"
+        Slot: 11
+      WitherGun:
+        Name: "&8&lWitherGun"
+        Item: "WOOD_HOE"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &8WitherGun(s)&7.'
+        Command: "ability %player% withergun %amount%"
+        Slot: 12
+      BelchBomb:
+        Name: "&d&lBelchBomb"
+        Item: "SLIME_BALL"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &dBelchBomb(s)&7.'
+        Command: "ability %player% belchbomb %amount%"
+        Slot: 13
+      NinjaStar:
+        Name: "&6&lNinjaStar"
+        Item: "NETHER_STAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6NinjaStar(s)&7.'
+        Command: "ability %player% ninjastar %amount%"
+        Slot: 14
+      DebuffFish:
+        Name: "&2&lDebuffFish"
+        Item: "RAW_FISH"
+        Data: 3
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &2DebuffFish(s)&7.'
+        Command: "ability %player% debufffish %amount%"
+        Slot: 15
+      AntiTrapStar:
+        Name: "&6&lAntiTrapStar"
+        Item: "NETHER_STAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &6AntiTrapStar(s)&7.'
+        Command: "ability %player% trapstar %amount%"
+        Slot: 16
+      BroInvis:
+        Name: "&d&lBro Invis"
+        Item: "INK_SACK"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &dBroInvis(s)&7.'
+        Command: "ability %player% broinvis %amount%"
+        Slot: 17
+      SecondChance:
+        Name: "&3&lSecond Chance"
+        Item: "FEATHER"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &3SecondChance(s)&7.'
+        Command: "ability %player% secondchance %amount%"
+        Slot: 20
+      TeleBow:
+        Name: "&5&lTeleportation Bow"
+        Item: "BOW"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &5TeleBow(s)&7.'
+        Command: "ability %player% telebow %amount%"
+        Slot: 21
+      FakeLogger:
+        Name: "&e&lFake Logger"
+        Item: "MONSTER_EGG"
+        Data: 120
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &eFakeLogger(s)&7.'
+        Command: "ability %player% fakelogger %amount%"
+        Slot: 22
+      RageBrick:
+        Name: "&4&lRageBrick"
+        Item: "NETHER_BRICK_ITEM"
+        Data: 0
+        Lore:
+          - '&7Left Click to start the process to give a player a certain amount of &4RageBrick(s)&7.'
+        Command: "ability %player% ragebrick %amount%"
+        Slot: 23
+#################
+# Ability-Reset #
+#################
+
+Ability-Reset:
+  Items:
+    Page-1-Size: 54
+    Page-2-Size: 54
+
+    Page-Items:
+      Page-1:
+        Next-Page: # Note: you cannot delete these or add on to them.
+          Enabled: true
+          Name: "&cNext Page &7&m--->"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 54
+        Previous-Page:
+          Enabled: true
+          Name: "&7&m<---&c Previous Page"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 46
+      Page-2:
+        Next-Page: # Note: you cannot delete these or add on to them.
+          Enabled: true
+          Name: "&cNext Page &7&m--->"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 54
+        Previous-Page:
+          Enabled: true
+          Name: "&7&m<---&c Previous Page"
+          Item: "SIGN"
+          Lore:
+            - ''
+          Slot: 46
+    Page-1:
+      Ability-Reset: # You can change these delete/create your own!
+        Name: "&4Ability-Reset"
+        Item: "WATCH"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown abilityreset"
+        Slot: 11
+      AntiPot:
+        Name: "&3AntiPot"
+        Item: "LEVER"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown antipot"
+        Slot: 13
+      AntiFall:
+        Name: "&cAntiFall"
+        Item: "DIAMOND_BOOTS"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown antifall"
+        Slot: 14
+      AntiRedstone:
+        Name: "&cAntiRedstone"
+        Item: "BLAZE_ROD"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown antiredstone"
+        Slot: 15
+      Cleave:
+        Name: "&4Cleave"
+        Item: "DIAMOND_AXE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown cleave"
+        Slot: 16
+      EnderButt:
+        Name: "&5EnderButt"
+        Item: "ENDER_PEARL"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown enderbutt"
+        Slot: 17
+      Bone:
+        Name: "&6Exotic Bone"
+        Item: "BONE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown exoticbone 32"
+        Slot: 20
+      FakePearl:
+        Name: "&6Fake Pearl"
+        Item: "ENDER_PEARL"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown fakepearl"
+        Slot: 21
+      Freezer:
+        Name: "&3Freezer"
+        Item: "GOLD_HOE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown freezer"
+        Slot: 22
+      Grappler:
+        Name: "&6Grappler"
+        Item: "FISHING_ROD"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown grappler"
+        Slot: 23
+      GuardianAngel:
+        Name: "&dGuardian Angel"
+        Item: "GHAST_TEAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown guardianangel"
+        Slot: 24
+      Harpoon:
+        Name: "&bHarpoon"
+        Item: "WOOD_AXE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown harpoon"
+        Slot: 25
+      LuckyIngot:
+        Name: "&eLucky Ingot"
+        Item: "GOLD_INGOT"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown luckyingot"
+        Slot: 26
+      Mixer:
+        Name: "&cMixer"
+        Item: "EGG"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown mixer"
+        Slot: 29
+      PocketBard:
+        Name: "&6PocketBard"
+        Item: "INK_SACK"
+        Data: 14
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown pocketbard"
+        Slot: 30
+      PoisonDart:
+        Name: "&5PoisonDart"
+        Item: "STICK"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown poisondart"
+        Slot: 31
+      BackStab:
+        Name: "&eBackStab"
+        Item: "BONE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown backstab"
+        Slot: 32
+      PotionCounter:
+        Name: "&dPotionCounter"
+        Item: "STICK"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown potioncounter"
+        Slot: 33
+      PotionInheritor:
+        Name: "&ePotionInheritor"
+        Item: "BLAZE_ROD"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown potioninheritor"
+        Slot: 34
+      PrePearl:
+        Name: "&dPrePearl"
+        Item: "ENDER_PEARL"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown prepearl"
+        Slot: 35
+      RageAbility:
+        Name: "&3RageAbility"
+        Item: "NETHER_STAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown rageability"
+        Slot: 38
+      Rocket:
+        Name: "&cRocket"
+        Item: "FIREWORK"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown rocket"
+        Slot: 39
+      RottenEgg:
+        Name: "&2RottenEgg"
+        Item: "EGG"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown rottenegg"
+        Slot: 40
+      SwapperAxe:
+        Name: "&6Swapper Axe"
+        Item: "GOLD_AXE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown swapperaxe"
+        Slot: 41
+      Switcher:
+        Name: "&aSwitcher"
+        Item: "SNOW_BALL"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown switcher"
+        Slot: 42
+      SwitchStick:
+        Name: "&2SwitchStick"
+        Item: "STICK"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown switchstick"
+        Slot: 43
+      TankIngot:
+        Name: "&bTank Ingot"
+        Item: "IRON_INGOT"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown tankingot"
+        Slot: 44
+    Page-2:
+      WebGun:
+        Name: "&2&lWebGun"
+        Item: "DIAMOND_HOE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown webgun"
+        Slot: 11
+      WitherGun:
+        Name: "&8&lWitherGun"
+        Item: "WOOD_HOE"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown withergun"
+        Slot: 12
+      BelchBomb:
+        Name: "&d&lBelchBomb"
+        Item: "SLIME_BALL"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown belchbomb"
+        Slot: 13
+      NinjaStar:
+        Name: "&6&lNinjaStar"
+        Item: "NETHER_STAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown ninjastar"
+        Slot: 14
+      DebuffFish:
+        Name: "&2&lDebuffFish"
+        Item: "RAW_FISH"
+        Data: 3
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown debufffish"
+        Slot: 15
+      AntiTrapStar:
+        Name: "&6&lAntiTrapStar"
+        Item: "NETHER_STAR"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown trapstar"
+        Slot: 16
+      BroInvis:
+        Name: "&d&lBro Invis"
+        Item: "INK_SACK"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown broinvis"
+        Slot: 17
+      SecondChance:
+        Name: "&3&lSecond Chance"
+        Item: "FEATHER"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown secondchance"
+        Slot: 20
+      TeleBow:
+        Name: "&5&lTeleportation Bow"
+        Item: "BOW"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown telebow"
+        Slot: 21
+      FakeLogger:
+        Name: "&e&lFake Logger"
+        Item: "MONSTER_EGG"
+        Data: 120
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown fakelogger"
+        Slot: 22
+      RageBrick:
+        Name: "&4&lRageBrick"
+        Item: "NETHER_BRICK_ITEM"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown ragebrick"
+        Slot: 23
+      ImpulseBomb:
+        Name: "&b&lImpulse Bomb"
+        Item: "SNOW_BALL"
+        Data: 0
+        Lore:
+          - '&7Left Click to reset this cooldown!'
+        Command: "ability %player% resetcooldown impulsebomb"
+        Slot: 24
+#################
+#   PocketBard  #
+#################
+
+PocketBard:
+  Size: 9
+  Items:
+    Invis:
+      Name: "&9Invis III" # you can edit these too!
+      Item: "INK_SACK"
+      Data: 0
+      Slot: 1
+      Lore:
+        - '&7Left Click to receive x3 &9Invis III''s&7.'
+      Command: "ability %player% bardinvis 3"
+    Regen:
+      Name: "&dRegen III"
+      Item: "GHAST_TEAR"
+      Data: 0
+      Slot: 2
+      Lore:
+        - '&7Left Click to receive x3 &dRegen III''s&7.'
+      Command: "ability %player% bardregen 3"
+    JumpBoost:
+      Name: "&aJumpBoost VI"
+      Item: "FEATHER"
+      Data: 0
+      Slot: 3
+      Lore:
+        - '&7Left Click to receive x3 &aJumpBoost VI''s&7.'
+      Command: "ability %player% bardjumpboost 3"
+    Strength:
+      Name: "&cStrength II"
+      Item: "BLAZE_POWDER"
+      Data: 0
+      Slot: 4
+      Lore:
+        - '&7Left Click to receive x3 &cStrength II''s&7.'
+      Command: "ability %player% bardstrength 3"
+    Res:
+      Name: "&bResistance III"
+      Item: "IRON_INGOT"
+      Data: 0
+      Slot: 5
+      Lore:
+        - '&7Left Click to receive x3 &bResistance III''s&7.'
+      Command: "ability %player% bardres 3"
+    Wither:
+      Name: "&5Wither II"
+      Item: "SPIDER_EYE"
+      Data: 0
+      Slot: 6
+      Lore:
+        - '&7Left Click to receive x3 &5Wither II''s&7.'
+      Command: "ability %player% bardwither 3"
+    Speed:
+      Name: "&2Speed III"
+      Item: "SUGAR"
+      Data: 0
+      Slot: 7
+      Lore:
+        - '&7Left Click to receive x3 &2Speed III''s&7.'
+      Command: "ability %player% bardspeed 3"

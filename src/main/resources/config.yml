@@ -1,0 +1,911 @@
+###################################
+#        Messages/Settings       #
+##################################
+
+Ability-Cooldown: 10
+Ability-Cooldown-Enabled: true
+Refund:
+  Enabled: true
+  Display-Cooldown: "&4Refund"
+  Cooldown: 5
+  Message:
+    Cooldown:
+      - '&cYou are on &4Refund Cooldown&c for %time%.'
+    Refunded:
+      - '&4&lREFUND&c Your projectile has been refunded due to it not hitting a player.'
+NO-PERM: "&cNo permission."
+PLAYERS-ONLY: "&cThis is for players only."
+SPAWN: # Currently disabled
+  Radius: 50
+  CantUse:
+    - '&cYou cannot use &eAbility Items&c in spawn.'
+TARGET-NULL: "&cPlayer does not exist."
+Ability-List-1:
+  - '&7&m-----------------------'
+  - ' &6&lAbility &lList&a (Page 1/5)'
+  - '&7&m-----------------------'
+  - ''
+  - '&e » &e&lGrappler'
+  - '&e » &c&lAntiFall'
+  - '&e » &3&lFreezer'
+  - '&e » &c&lMixer'
+  - '&e » &2&lWebGun'
+  - '&e » &3&lRageAbility'
+  - '&e » &d&lGuardianAngel'
+  - ''
+  - '&7/ability list <page>'
+  - ''
+  - '&7&m-----------------------'
+Ability-List-2:
+  - '&7&m-----------------------'
+  - ' &6&lAbility &lList&a (Page 2/5)'
+  - '&7&m-----------------------'
+  - ''
+  - '&e » &e&lLuckyIngot'
+  - '&e » &6&lExoticBone'
+  - '&e » &d&lPrePearl'
+  - '&e » &b&lTankIngot'
+  - '&e » &c&lRocket'
+  - '&e » &d&lSwapperAxe'
+  - '&e » &6&lSwitchStick'
+  - '&e » &b&lHarpoon'
+  - ''
+  - '&7/ability list <page>'
+  - ''
+  - '&7&m-----------------------'
+Ability-List-3:
+  - '&7&m-----------------------'
+  - ' &6&lAbility &lList&a (Page 3/5)'
+  - '&7&m-----------------------'
+  - ''
+  - '&e » &2&lRotten Egg'
+  - '&e » &6&lPocketBard'
+  - '&e » &d&lPotionInheritor'
+  - '&e » &e&lPotionCounter'
+  - '&e » &5&lPoisonDart'
+  - '&e » &4&lCleave'
+  - '&e » &5&lEnderButt'
+  - '&e » &e&lBackStab'
+  - ''
+  - '&7/ability list <page>'
+  - ''
+  - '&7&m-----------------------'
+Ability-List-4:
+  - '&7&m-----------------------'
+  - ' &6&lAbility &lList&a (Page 4/5)'
+  - '&7&m-----------------------'
+  - ''
+  - '&e » &6&lFakePearl'
+  - '&e » &3&lAntiPot'
+  - '&e » &a&lSwitcher'
+  - '&e » &4&lAbility-Reset'
+  - '&e » &8&lWitherGun'
+  - '&e » &6&lNinjaStar'
+  - '&e » &6&lAntiTrapStar'
+  - '&e » &2&lDebuffFish'
+  - ''
+  - '&7/ability list <page>'
+  - ''
+  - '&7&m-----------------------'
+Ability-List-5:
+  - '&7&m-----------------------'
+  - ' &6&lAbility &lList&a (Page 5/5)'
+  - '&7&m-----------------------'
+  - ''
+  - '&e » &d&lBr0 Invis'
+  - '&e » &3&lSecond Chance'
+  - '&e » &5&lTeleBow'
+  - '&e » &b&lImpulseBomb'
+  - '&e » &4&lRageBrick'
+  - ''
+  - '&7/ability list <page>'
+  - ''
+  - '&7&m-----------------------'
+Message:
+  Item:
+    Disabled:
+      - '&cYou cannot use this ability item as it''s disabled.'
+    OnCooldown:
+      - '&cYou are still on %ability%&c cooldown for %time%.'
+    Reset-Cooldown:
+      - '&cYou have reset %target%''s %timer% Cooldown.'
+  Ability:
+    OnCooldown:
+      - '&cYou are still on &eAbility Item&c cooldown for %time%.'
+  Sender-Give:
+    - '&cYou have given %amount% &7%ability%&c to &4%target%'
+  Target-Give:
+    - '&cYou have been given &7%amount% %ability%'
+Invalid-Args:
+  - '&7&m-----------------------'
+  - '&6&lrAbilities Help'
+  - '&7&m-----------------------'
+  - '&e/ability <player> <ability> <amount> &7- &fGives a player an ability item.'
+  - '&e/ability <player> resetcooldown <abilityname> &7- &fResets specific ability item for player.'
+  - '&e/ability give <player> &7- &fOpen a gui to give the player an ability item.'
+  - '&e/ability list &7- &fshows a list of all ability items.'
+  - '&e/ability reload &7- &freloads config.yml and gui.yml.'
+  - '&7&m-----------------------'
+
+###################################
+#        Abilities               #
+##################################
+
+NinjaStar:
+  Enabled: true
+  Name: "&6&lNinjaStar"
+  Item: "NETHER_STAR"
+  Lore:
+    - '&7Right Click to teleport to the player that last hit you within 15 seconds.'
+  WarmUp: 5
+  Cooldown: 120
+  Been-Teleported-Message: true
+  Message:
+    Been-Teleported:
+      - '&6%player%&e is teleporting to you.'
+    Teleported:
+      - '&eYou will been teleported to &6%player%&e.'
+    Teleporting:
+      - '&eYou will be telported to to &6%player%&e in 5 seconds'
+
+AntiTrapStar:
+  Enabled: true
+  Name: "&6&lAntiTrapStar"
+  Item: "NETHER_STAR"
+  Lore:
+    - '&7Right Click to teleport to the player that last hit you with a projectile within 15 seconds.'
+  WarmUp: 5
+  Cooldown: 120
+  Been-Teleported-Message: true
+  Message:
+    Been-Teleported:
+      - '&6%player%&e is teleporting to you.'
+    Teleported:
+      - '&eYou will been teleported to &6%player%&e.'
+    Teleporting:
+      - '&eYou will be telported to to &6%player%&e in 5 seconds'
+
+ExoticBone:
+  Enabled: true
+  Name: "&6&lExotic Bone"
+  Item: "BONE"
+  Lore:
+    - '&7Hit a person 3 times in a row to prevent their building'
+  Hits: 3
+  Cooldown:
+    Damaged: 10
+    Damager: 120
+  Message:
+    Cant-Build:
+      - '&cYou cannot build or interact for %time%'
+    Been-Hit:
+      - '&eYou have been hit with an &6&lExotic Bone&e and cannot build for 10 seconds by &6%player%'
+    Hit-Someone:
+      - '&eYou have hit %player% with an &6&lExotic Bone&e and they cannot build for &610 seconds'
+      - '&eYou are now on &6&lExoticBone&e Cooldown for 2 minutes.'
+
+AntiRedstone:
+  Enabled: true
+  Name: "&c&lAntiRedstone Rod"
+  Item: "BLAZE_ROD"
+  Lore:
+    - '&7Hit a person 3 times in a row to prevent their ability to activate any redstone-related items.'
+  Cooldown:
+    Damaged: 10
+    Damager: 120
+  Hits: 3
+  Message:
+    Cant-Build:
+      - '&cYou cannot activate redstone-related items for %time%'
+    Been-Hit:
+      - '&7You have been hit with an &c&lAntiRedstone&7 and cannot build for 10 seconds by &c%player%'
+    Hit-Someone:
+      - '&7You have hit %player% with an &c&lAntiRedstone Rod&7 and they cannot use redstone for &c10 seconds'
+      - '&eYou are now on &c&lAntiRedstone Rod&e Cooldown for 2 minutes.'
+
+DebuffFish:
+  Enabled: true
+  Name: "&2&lDebuff Fish"
+  Item: "RAW_FISH"
+  Data: 3 # data basically makes it so how it has FISH:3
+  Lore:
+    - '&7Hit someone 3 times with the debuff fish to give them poisonous effects.'
+  Cooldown: 120
+  Hits: 3
+  Effects:
+    Poison: # you can name this whatever you want
+      Type: "POISON"
+      Power: 2
+      Time: 5
+    Slowness:
+      Type: "SLOW"
+      Power: 2
+      Time: 5
+  Message:
+    Been-Hit:
+      - '&7You have been hit by &2%player%&7 with a &2Debuff Fish&7.'
+    Hit-Someone:
+      - '&7You have hit &a%player%&7 with a &2Debuff Fish'
+
+PotionCounter:
+  Enabled: true
+  Name: "&d&lPotionCounter"
+  Item: "STICK"
+  Lore:
+    - '&7Hit a player 3 times to show how many health potions they have.'
+  Cooldown: 120
+  Hits: 3
+  Message:
+    Hit-Someone:
+      - '&d%player%&7 has %pots% &dHealth Potions&7.'
+
+PotionInheritor:
+  Enabled: true
+  Name: "&e&lPotionInheritor"
+  Item: "BLAZE_ROD"
+  Lore:
+    - '&7Hit a player 3 times to steal their potion effects for 15 seconds.'
+  Effect:
+    Time: 15
+  Cooldown: 120
+  Hits: 3
+  Message:
+    No-Effects:
+      - '&7That player does not have any active potion effects.'
+    Hit-Someone:
+      - '&7You have stolen &e%player%&7''s potion effects for 15 seconds.'
+
+TeleBow:
+  Enabled: true
+  Name: "&5&lTeleportation Bow"
+  Item: "BOW"
+  Lore:
+    - '&7Right Click to shoot an arrow that will teleport upon hitting someone.'
+  Cooldown: 120
+  Message:
+    Been-Hit:
+      - '&5%player% &7has hit you with a &5Teleportation Bow.'
+
+BelchBomb:
+  Enabled: true
+  Name: "&d&lBelch Bomb"
+  Item: "SLIME_BALL"
+  Lore:
+    - '&7Right Click this to blind people within a 10 block distance.'
+  Cooldown: 120
+  Distance: 10
+  Effects:
+    Slowness:
+      Type: "SLOW"
+      Time: 5
+      Power: 2
+    Blind:
+      Type: "BLINDNESS"
+      Time: 5
+      Power: 2
+  Message:
+    None-Near:
+      - '&cThere are no players nearby.'
+    Used:
+      - '&7You have used your &dBelch Bomb&7.'
+    Been-Blinded:
+      - '&d%player%&7 has just blinded you using a &dBelch Bomb&7.'
+
+BroInvis:
+  Enabled: true
+  Name: "&d&lBr0 Invis"
+  Item: "INK_SACK"
+  Lore:
+    - '&7Right Click to hide yourself for 3 minutes.'
+  Cooldown: 120
+  Invis-Time: 180
+  Message:
+    Been-Hit:
+      - '&7Your &dBr0 Invis&7 has worn off due to someone hitting you.'
+    Used:
+      - '&7You have used your &dBr0 Invis&7.'
+
+FakeLogger:
+  Enabled: true
+  Name: "&e&lFake Logger"
+  Lore:
+    - '&7Right Click this to spawn a decoy logger!'
+  Item: "MONSTER_EGG"
+  Cooldown: 120
+  Data: 120
+  Player:
+    Invis-Time: 45
+  Villager:
+    Name: "&e%player%'s Logger"
+    Health: 20.0
+    Show-Player-After-Killed: true # should the player be hidden after their villager is killed?
+    Show-Player-After-Despawn: true # should the player be hidden after their villager is despawned?
+    Despawn-Time: 30
+  Message:
+    Been-Hit:
+      - '&cYour invis has worn off due to being hit!'
+    Expired:
+      - '&cYour invisibilty has worn off, you are no longer hidden!'
+    Killed:
+      - '&cYour decoy villager has been killed you are no longer hidden.'
+    Despawned:
+      - '&cYour decoy villager has despawned you are no longer hidden!'
+
+SecondChance:
+  Enabled: true
+  Name: "&3&lSecond Chance"
+  Item: "FEATHER"
+  Lore:
+    - '&7Right Click to reset your pearl cooldown.'
+  Cooldown: 120
+  Command: "timer set %player% enderpearl 0"
+  Message:
+    Used:
+      - '&7You have used your &3Second Chance&7.'
+
+BackStab:
+  Enabled: true
+  Name: "&e&lBackStab"
+  Item: "BONE"
+  Lore:
+    - '&7Hit a player from behind with this to stab them and negate 4 hearts from their health.'
+  Cooldown: 120
+  Health-When-Hit: 4
+  Message:
+    Not-Behind:
+      - '&cYou need to be behind a player to do this.'
+    Hit-Someone:
+      - '&7You &4backstabbed&7 &e%player%&7.'
+    Been-Hit:
+      - '&7You have been &4backstabbed&7 by &e%player%&7.'
+RottenEgg:
+  Enabled: true
+  Name: "&2&lRotten Egg"
+  Lore:
+    - '&7Hit a player to give them posionous effects.'
+  Cooldown: 120
+  Item: "EGG"
+  Effects:
+    Weakness:
+      Type: "WEAKNESS"
+      Time: 5
+      Power: 2
+    Poison:
+      Type: "POISON"
+      Time: 5
+      Power: 2
+    Slow:
+      Type: "SLOW_DIGGING"
+      Time: 5
+      Power: 2
+    Nausea:
+      Type: "CONFUSION"
+      Time: 5
+      Power: 2
+  Message:
+    Been-Hit:
+      - '&7You have just been hit with a &2RottenEgg&7.'
+      - '&7You now have the following effects:'
+      - '&aSlowness III'
+      - '&2Hunger II'
+      - '&8Fatigue II'
+      - '&eNausea II'
+    Hit-Someone:
+      - '&7You have just been hit with a &2RottenEgg&7 and have been harshly poisoned!'
+
+PoisonDart:
+  Enabled: true
+  Name: "&5&lPoisonDart"
+  Lore:
+    - '&7Right Click this to send a poisonous dart out and whoever is'
+    - '&7will be deeply &2&npoisoned&7.'
+  Cooldown: 120
+  Item: "STICK"
+  Effects:
+    Weakness:
+      Type: "WEAKNESS"
+      Time: 5
+      Power: 2
+    Poison:
+      Type: "POISON"
+      Time: 5
+      Power: 2
+    Slow:
+      Type: "SLOW_DIGGING"
+      Time: 5
+      Power: 2
+  Message:
+    Been-Hit:
+      - '&7You have just been hit with a &5Poisonous Dart&7.'
+    Hit-Someone:
+      - '&7You have just hit &5%player%&7 with a &5Poisonous Dart&7 and has been harshly poisoned!'
+
+LuckyIngot:
+  Enabled: true
+  Name: "&e&lLucky Ingot"
+  Lore:
+    - '&7Right Click to have a chance to get Positive or negative effects.'
+  Cooldown: 120
+  Item: "GOLD_INGOT"
+  Positive-Chance: 50
+  Negative-Chance: 50
+  Effects:
+    Positive:
+      Strength:
+        Type: "INCREASE_DAMAGE"
+        Time: 5
+        Power: 2
+      Resistance:
+        Type: "DAMAGE_RESISTANCE"
+        Time: 5
+        Power: 3
+    Negative:
+      Weakness:
+        Type: "WEAKNESS"
+        Time: 5
+        Power: 2
+      Slow:
+        Type: "SLOW_DIGGING"
+        Time: 5
+        Power: 2
+  Message:
+    Negative:
+      - '&7You have just used a lucky ingot and received &cNegative Effects'
+    Positive:
+      - '&7You have just used a lucky ingot and received &aPostive Effects&c.'
+
+Rocket:
+  Enabled: true
+  Name: "&c&lRocket"
+  Lore:
+    - '&7Right Click to blast off.'
+  Cooldown: 120
+  Item: "FIREWORK"
+  X: 2
+  Y: 5
+  Z: 2
+  Power: 3
+  Message:
+    Success:
+      - '&7You have just used a &cRocket&7.'
+
+Grappler:
+  Enabled: true
+  Name: "&6&lGrappling Hook"
+  Lore:
+    - '&7Cast this rod to be flung to it''s location.'
+  Cooldown: 120
+  Boost: 2.0
+  Item: "FISHING_ROD"
+  Message:
+    Used:
+      - '&7You have used your &6&lGrappling Hook'
+
+Mixer:
+  Enabled: true
+  Name: "&c&lMixer"
+  Lore:
+    - '&7Hit a player with this to scramble their hotbar.'
+  Cooldown: 120
+  Item: "EGG"
+  Message:
+    Failed:
+      - '&7There was an error mixing their inventory. &cYou have been refunded&7.'
+    Been-Hit:
+      - '&7You have just been mixed by &c%player%&7.'
+    Hit-Someone:
+      - '&7You have just mixed &c%player%''s &7hotbar.'
+
+Cleave:
+  Enabled: true
+  Name: "&4&lCleave"
+  Lore:
+    - '&7Hit a player to make them bleed for 5 seconds.'
+  Cooldown: 120
+  Bleed-Duration: 5
+  Hearts-Per-Second: 0.5
+  Item: "DIAMOND_AXE"
+  Message:
+    Bleeding-Stopped:
+      - '&7Your wounds have been healed&7.'
+    Bleeding:
+      - '&7You are bleeding! &4Cleave Damage&7.'
+    Been-Hit:
+      - '&7You have been seriously injured from a &4Cleave&7 be careful. You''re bleeding!'
+    Hit-Someone:
+      - '&7You have just hit &4%player%&7 with a &4Cleave&7.'
+
+WebGun:
+  Enabled: true
+  Name: "&2&lWebGun"
+  Lore:
+    - '&7Right Click to launch a snowball to spawn a cobweb on a player.'
+    - '&7If it hits a block it will turn that block in to a cobweb.'
+  Cooldown: 120
+  Web-Delay: 5
+  Item: "DIAMOND_HOE"
+  Single-Spawn-Above-Hit-Block: false # make sure only 1 is true at a time.
+  Single-Replace-Hit-Block: false
+  3x3-Spawn-Above-Hit-Block: true
+  Message:
+    Invalid:
+      - '&7Your &2WebGun&7 has been refunded do to hitting a blocked item.'
+    Used:
+      - '&7You have used a &2&lWebGun&7.'
+
+RageAbility:
+  Enabled: true
+  Name: "&3&lRage Ability"
+  Lore:
+    - '&7The amount of hits done to you in 10 seconds will be how long you get &cStrength II&7.'
+  Cooldown: 120
+  Max-Seconds: 10
+  Item: "NETHER_STAR"
+  WarmUp: 10 # seconds whenever they click it until it gives them the effect.
+  Effect:
+    Power: 2
+  Message:
+    Used:
+      - '&7You have used the &3&lRage Ability.'
+    Finished:
+      - '&3&lRage Ability &7You have just received &cStrength II&7 for %hits% seconds.'
+PrePearl:
+  Enabled: true
+  Name: "&d&lPrePearl"
+  Lore:
+    - '&7Right Click to be teleported to the location last clicked.'
+  Cooldown: 120
+  WarmUp: 3
+  Throw-Pearl: false
+  Item: "ENDER_PEARL"
+  Message:
+    Countdown: #counts down from 3
+      - '&aYou will be teleported to your previous location in %time%...'
+    Success:
+      - '&7You have just used a &dPrepearl &7and will be teleported to your previous location in &d5 seconds&7.'
+    Teleported:
+      - '&7You have been teleported to your previous location.'
+
+GuardianAngel:
+  Enabled: true
+  Name: "&d&lGuardian Angel"
+  Lore:
+    - '&7Right Click this for the next 5 seconds if you drop below.'
+    - '&71 Heart. You will be fully regenerated health.'
+  Cooldown: 120
+  Hearts-Before-Heal: 2
+  Initiated-Time: 5
+  Item: "GHAST_TEAR"
+  Message:
+    Expired:
+      - '&7Your &dGuardianAngel&7 has worn off. &c&lIT WILL NOT WORK ANYMORE!'
+    Used:
+      - '&7You used a &d&lGuardian Angel.'
+    Initiated:
+      - ''
+      - '&7Your &d&lGuardian Angel&7 has intiated and your health has been regenerated.'
+      - ''
+
+Freezer:
+  Enabled: true
+  Name: "&3&lFreezer"
+  Lore:
+    - '&7Right Click to shoot a snowball and if it hits someone they will receive Slowness.'
+  Cooldown: 120
+  Item: "GOLD_HOE"
+  Effect:
+    Power: 2
+    Time: 10
+  Message:
+    Hit-Someone:
+      - '&7You have just hit &3%player% &7with a &3Freezer&7.'
+    Been-Hit:
+      - '&7You have been hit by &3%player%&7 with a &3Freezer.'
+
+WitherGun:
+  Enabled: true
+  Name: "&8&lWither Gun"
+  Lore:
+    - '&7Right Click to shoot a snowball and if it hits someone they will start to wither.'
+  Cooldown: 120
+  Item: "WOOD_HOE"
+  Effect:
+    Power: 2
+    Time: 10
+  Message:
+    Hit-Someone:
+      - '&7You have just hit &8%player% &7with a &8Wither Gun&7.'
+    Been-Hit:
+      - '&7You have been hit by &8%player%&7 with a &8Wither Gun.'
+
+AntiFall:
+  Enabled: true
+  Name: "&c&lAntiFall"
+  Lore:
+    - '&7Apply these to prevent fall damage up to 10 times.'
+  Item: "DIAMOND_BOOTS"
+  Chance: 50
+  Cooldown:
+    Enabled-Success: true
+    Enabled-Failed: true
+    Time: 120
+  Enchants:
+    Unbreaking:
+      Enabled: true
+      Level: 5
+    Protection:
+      Enabled: true
+      Level: 2
+  Message:
+    Failed:
+      - '&7You have used your &c&lAntiFall Boots&7 and they &c&lFAILED&7.'
+    Success:
+      - '&7Your &c&lAntiFall Boots&7 have saved your from fall damage &a&lSUCCESS&7.'
+
+SwapperAxe:
+  Enabled: true
+  Name: "&d&lSwapper Axe"
+  Lore:
+    - '&7Hit a player to remove their helmet.'
+  Cooldown: 120
+  Item: "GOLD_AXE"
+  Effect:
+    Time: 5
+    Power: 3
+  Delay:
+    Enabled: true
+    Time: 3
+  Message:
+    Full-Inv:
+      - '&cYour inventory was fully, so your helmet has been dropped on the ground.'
+    No-Helmet-Damager:
+      - '&a%player% had an invalid helmet or had no &b&nDiamond Helmet&a.'
+      - 'so they received &8Slowness&a for 5 seconds.'
+    No-Helmet-Damaged:
+      - '&aYou had an &cinvalid&a helmet&a.'
+      - '&aYou''ll received &8Slowness&a for 5 seconds.'
+    Hit-Someone:
+      - '&aYou have hit %player% with a &d&lSwapperAxe&a.'
+    Been-Hit:
+      - '&a%player% has just hit you with a &d&lSwapperAxe'
+
+Harpoon:
+  Enabled: true
+  Name: "&b&lHarpoon"
+  Lore:
+    - '&7Left click to pull a player towards you, Right Click to push yourself towards them.'
+  Cooldown: 120
+  Item: "WOOD_AXE"
+  Message:
+    Been-Pulled:
+      - '&b%player%&7 pulled themselves towards you.'
+    Been-Pushed:
+      - '&b%player%&7 has pushed himself to you.'
+    Pulled:
+      - '&7You have pulled &b%player%&7.'
+    Pushed:
+      - '&7You have pushed yourself towards &b%player%&7.'
+
+SwitchStick:
+  Enabled: true
+  Name: "&6&lSwitch Stick"
+  Lore:
+    - '&7Hit a player to rotate them 180 degrees.'
+  Cooldown: 120
+  Degrees: 180 # angle of their head whenever hit
+  Item: "STICK"
+  Message:
+    Hit-Someone:
+      - '&aYou have hit %player% with a &6&lSwitchStick&a.'
+    Been-Hit:
+      - '&a%player% has just hit you with a &6&lSwitchStick'
+
+Switcher:
+  Enabled: true
+  Name: "&a&lSwitcher"
+  Lore:
+    - '&7Hit a player to be switched locations with them.'
+  Cooldown: 15
+  Range:
+    Enabled: true
+    Message: "&cThat player is out of range!"
+    Range: 8
+  Item: "SNOW_BALL"
+  Message:
+    Hit-Someone:
+      - '&aYou have just swapped location with &c%player%'
+    Been-Hit:
+      - '&c%player%&a has just hit you with a switcher.'
+
+FakePearl:
+  Enabled: true
+  Name: "&6&lFakePearl"
+  Lore:
+    - '&7Throw this pearl to cancel the enderpearl teleportation.'
+  Cooldown: 120
+  Item: "ENDER_PEARL"
+  Message:
+    Used:
+      - '&7You have just used a &6&lFakePearl&7.'
+
+TankIngot:
+  Enabled: true
+  Name: "&b&lTank Ingot"
+  Lore:
+    - '&7Right Click to receive &bResistence 3&7 for the time of the amount of players around you.'
+  Cooldown: 120
+  Multiplier: 2.0 # multiplies the time by the amount of players
+  Item: "IRON_INGOT"
+  Distance: 20 # this is for x, y & z coordinates
+  Power: 3
+  Message:
+    Success:
+      - '&7You have just used a &bTank Ingot &7and received &bResistence 3 &7for %nearby% seconds'
+    Denied:
+      - '&7You cannot use the &bTank Ingot&7 as there are no players around you.'
+
+RageBrick:
+  Enabled: true
+  Name: "&4&lRageBrick"
+  Lore:
+    - ''
+    - '&7Right Click to receive &cStrength II&7.'
+    - ''
+    - '&4Example&7: 3 players within 20 blocks of you, then you would receive 12 seconds of strength II'
+  Cooldown: 120
+  Item: "NETHER_BRICK_ITEM"
+  Seconds-Per-Player: 4 # this would mean 2 players would be 8 1 would be 4 and 3 would be 12 etc...
+  Distance: 20 # this is for x, y & z coordinates
+  Effects:
+    Strength:
+      Type: "INCREASE_DAMAGE"
+      Power: 2
+  Message:
+    Success:
+      - '&7You have just used a &4Rage Brick &7and received &cStrength II &7for %time% seconds'
+    Denied:
+      - '&7You cannot use a &4Rage Brick &7when nobody is around you!'
+
+ImpulseBomb:
+  Name: "&b&lImpulse Bomb"
+  Lore:
+    - '&7Shoot this snowball and whoever is hit will be impulsed with knockback.'
+  Cooldown: 120
+  Item: "SNOW_BALL"
+  Knockback: -5.0
+  Message:
+    Hit-Someone:
+      - '&7You have hit &b%player%&7 using an &bImpulse Bomb&7.'
+    Been-Hit:
+      - '&7You have been hit by an &bImpulse Bomb&7 by &b%player%&7.'
+
+EnderButt:
+  Name: "&5&lEnder Butt"
+  Lore:
+    - '&7Throw this to be launched in the direction you''re looking.'
+  Cooldown: 120
+  Item: "ENDER_PEARL"
+  Boost: 3.0
+  Message:
+    Success:
+      - '&7You have just used a &5Ender Butt&7. Have a fun ride!'
+
+AntiPotion:
+  Name: "&3&lAnti Potion"
+  Lore:
+    - '&7Hit a player 3 times in a row to block any potions from splashing.'
+  Cooldown:
+    Hit-Player: 5
+    Damager: 120
+  Hits: 3
+  Item: "LEVER"
+  Message:
+    Been-Hit:
+      - '&7You have been hit with an &3Anti Potion&7 you cannot pot for 5 seconds.'
+    Hit-Someone:
+      - '&7You hit &3%player%&7 with an &3Anti Potion&7 Ability Item.'
+      - '&7They can no longer pot for 5 seconds.'
+    Cant-Pot:
+      - '&7You are currently blocked from using splash potion for &3%time%&7.'
+
+Ability-Reset:
+  Enabled: true
+
+  Name: "&4&lAbility-Reset&7 (Right-Click)"
+  Lore:
+    - '&7Right Click to open a gui to reset any of your cooldowns.'
+  Cooldown: 120
+  Check-Ability-Cooldown: true # if you don't want this item to use ability cooldown put it to false and vise versa
+  Item: "WATCH"
+  Message:
+    Received:
+      - '&7You have just used a &4Ability-Reset&7 and reset your %ability% Cooldown.'
+PocketBard:
+  PocketBard:
+    Enabled: true
+    Name: "&6&lPocketBard"
+    Item: "INK_SACK"
+    Data: 14
+    Cooldown: 120
+    Lore:
+      - '&7Right Click to open a selector to select your pocketbard'
+  Invis:
+    Enabled: true
+    Name: "&9&lInvisibility &7(III)"
+    Message:
+      - '&7You have received &9Invisibility III &7for 5 seconds.'
+    Lore:
+      - '&7Right Click to receive &9Invis III&7 for 5 seconds.'
+    Item: "INK_SACK"
+    PotionEffect:
+      Power: 2
+      Time: 30
+  Wither:
+    Enabled: true
+
+    Name: "&4&lWither &7(II)"
+    Item: "SPIDER_EYE"
+    Distance: 10 # x y z
+    Message:
+      - '&7You have given everyone within 10x10 radious &4Wither II &7for 5 seconds.'
+    Lore:
+      - '&7Right Click to give others in a 10x10 radius &4Wither II&7 for 5 seconds.'
+    PotionEffect:
+      Power: 2
+      Time: 5
+  Regen:
+    Enabled: true
+    Name: "&5&lRegen &7(III)"
+    Item: "GHAST_TEAR"
+    Message:
+      - '&7You have received &5Regen III &7for 5 seconds.'
+    Lore:
+      - '&7Right Click to receive &5Regen III&7 for 5 seconds.'
+    PotionEffect:
+      Power: 4
+      Time: 5
+  Strength:
+    Enabled: true
+    Name: "&c&lStrength &7(II)"
+    Message:
+      - '&7You have received &cStrength II &7for 5 seconds.'
+    Lore:
+      - '&7Right Click to receive &cStrength II&7 for 5 seconds.'
+    Item: "BLAZE_POWDER"
+    PotionEffect:
+      Power: 2
+      Time: 5
+  Resistance:
+    Enabled: true
+    Name: "&b&lResistance &7(III)"
+    Lore:
+      - '&7Right Click to receive &bResistance III&7 for 5 seconds.'
+    Item: "IRON_INGOT"
+    Message:
+      - '&7You have received &bResistance III &7for 5 seconds.'
+    PotionEffect:
+      Power: 3
+      Time: 5
+  Speed:
+    Enabled: true
+
+    Name: "&2Speed &7(III)"
+    Lore:
+      - '&7Right Click to receive &2Speed III&7 for 5 seconds.'
+    Item: "SUGAR"
+    Message:
+      - '&7You have received &2Speed III &7for 5 seconds.'
+    PotionEffect:
+      Power: 3
+      Time: 5
+  JumpBoost:
+    Enabled: true
+    Name: "&a&lJump Boost &7(VI)"
+    Lore:
+      - '&7Right Click to receive &aJump Boost VI&7 for 5 seconds.'
+    Item: "FEATHER"
+    Message:
+      - '&7You have received &aJumpBoost VI &7for 5 seconds.'
+    PotionEffect:
+      Power: 6
+      Time: 5

@@ -1,0 +1,8 @@
+name: rAbilities
+version: 1.0.0
+main: me.razorni.dev.rAbilities
+author: Razorni [LBuddyBoy Author]
+
+commands:
+  ability:
+    description: give a specific ability item to yourself or others.
