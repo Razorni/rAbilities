@@ -22,7 +22,7 @@ import me.razorni.dev.gui.give.pages.GiveGUIListener;
 import java.util.HashMap;
 import java.util.Map;
 
-// razorni is a dog big big dog tessst
+// razorni is a dog big big dog
 
 public class rAbilities extends JavaPlugin {
     // Cooldowns
